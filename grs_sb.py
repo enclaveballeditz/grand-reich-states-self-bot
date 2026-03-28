@@ -251,7 +251,7 @@ async def ipv4lookup(ctx, ip_address: str = None):
             print(f"ip looked up successfully")
 
         elif response.status_code == 429:
-            print(f"{C.RED}Rate limited by IP API")
+            print(f"{C.RED}rate limited by ip api")
         else:
             print(
                 f"failed to osint ip code: {response.status_code}"
